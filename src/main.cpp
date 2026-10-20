@@ -28,9 +28,9 @@ static void CreateLyricsPanel() {
     if (lyricsScreen != nullptr) {
         return;
     }
-
+    lyricsScreen = BSML::Lite::CreateFloatingScreen(
         UnityEngine::Vector2(65.0f, 26.0f),
-    UnityEngine::Vector3(-1.15f, 2.0f, 3.0f),
+        UnityEngine::Vector3(-1.15f, 2.0f, 3.0f),
         UnityEngine::Vector3(0.0f, 0.0f, 0.0f),
         0.0f,
         true,
