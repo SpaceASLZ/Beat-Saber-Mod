@@ -20,18 +20,18 @@
     ],
     "qmodOutput": "./QuestLyrics.qmod"
   },
-  "dependencies": [
+  "dependencies": [  "dependencies": [
     {
       "id": "beatsaber-hook",
       "versionRange": "^6.4.2",
       "additionalData": {}
     },
     {
-          {
       "id": "bs-cordl",
       "versionRange": "4008.*",
       "additionalData": {}
     },
+    {
       "id": "scotland2",
       "versionRange": "^0.1.6",
       "additionalData": {
