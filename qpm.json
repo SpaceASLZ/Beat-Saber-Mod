@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/QuestPackageManager/QPM.Package/refs/heads/main/qpm.schema.json",
+  "sharedDir": "shared",
+  "dependenciesDir": "extern",
+  "version": "0.1.0",
+  "info": {
+    "name": "QuestLyrics",
+    "id": "questlyrics",
+    "version": "0.1.0",
+    "additionalData": {
+      "overrideSoName": "libquestlyrics.so",
+      "cmake": true
+    }
+  },
+  "workspace": {
+    "ndk": "^27.3.13750724",
+    "qmodIncludeDirs": [
+      "./build",
+      "./extern/libs"
+    ],
+    "qmodOutput": "./QuestLyrics.qmod"
+  },
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "versionRange": "^6.4.2",
+      "additionalData": {}
+    },
+    {
+      "id": "scotland2",
+      "versionRange": "^0.1.6",
+      "additionalData": {
+        "includeQmod": false
+      }
+    }
+  ]
+}
