@@ -56,8 +56,8 @@ jobs:
             > ndkpath.txt
 
           test -f "$HOME/android-ndk-r27-canary/build/cmake/android.toolchain.cmake"
-
-            - name: Set up QPM and restore dependencies
+          
+      - name: Set up QPM and restore dependencies
         uses: Fernthedev/qpm-action@v1
         with:
           workflow_token: ${{ secrets.GITHUB_TOKEN }}
