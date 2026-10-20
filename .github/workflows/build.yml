@@ -57,13 +57,14 @@ jobs:
 
           test -f "$HOME/android-ndk-r27-canary/build/cmake/android.toolchain.cmake"
 
-      - name: Set up QPM and restore dependencies
-        uses: Fernthedev/qpm-action@main
+            - name: Set up QPM and restore dependencies
+        uses: Fernthedev/qpm-action@v1
         with:
           workflow_token: ${{ secrets.GITHUB_TOKEN }}
+          qpm_version: 'version@^1.5.11'
+          resolve_ndk: false
           restore: true
           cache: true
-          publish: false
 
       - name: Compile native Quest library
         run: |
