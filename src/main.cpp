@@ -29,9 +29,8 @@ static void CreateLyricsPanel() {
         return;
     }
 
-    lyricsScreen = BSML::Lite::CreateFloatingScreen(
-        UnityEngine::Vector2(90.0f, 35.0f),
-        UnityEngine::Vector3(0.0f, 1.6f, 2.2f),
+        UnityEngine::Vector2(65.0f, 26.0f),
+    UnityEngine::Vector3(-1.15f, 2.0f, 3.0f),
         UnityEngine::Vector3(0.0f, 0.0f, 0.0f),
         0.0f,
         true,
@@ -41,9 +40,9 @@ static void CreateLyricsPanel() {
     lyricsText = BSML::Lite::CreateText(
         lyricsScreen->get_transform(),
         "QuestLyrics\nWaiting for timed lyrics...",
-        5.0f,
+        3.8f,
         UnityEngine::Vector2(0.0f, 0.0f),
-        UnityEngine::Vector2(84.0f, 30.0f)
+        UnityEngine::Vector2(61.0f, 22.0f)
     );
 
     lyricsText->set_alignment(TMPro::TextAlignmentOptions::Center);
