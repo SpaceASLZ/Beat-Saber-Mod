@@ -37,6 +37,18 @@
       "additionalData": {}
     },
     {
+      "id": "custom-types",
+      "versionRange": "^0.18.2",
+      "additionalData": {}
+    },
+    {
+      "id": "paper2_scotland2",
+      "versionRange": "^4.6.1",
+      "additionalData": {
+        "private": true
+      }
+    },
+    {
       "id": "scotland2",
       "versionRange": "^0.1.6",
       "additionalData": {
