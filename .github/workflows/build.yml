@@ -50,7 +50,7 @@ jobs:
             https://github.com/QuestPackageManager/ndk-canary-archive/releases/download/27.0.1/android-ndk-10883340-linux-x86_64.zip \
             -O "$HOME/ndk.zip"
 
-          7z x "$HOME/ndk.zip" -o"$HOME/" > /dev/null
+          unzip -q -o -y "$HOME/ndk.zip" -d "$HOME/"
 
           echo "$HOME/android-ndk-r27-canary" \
             > ndkpath.txt
