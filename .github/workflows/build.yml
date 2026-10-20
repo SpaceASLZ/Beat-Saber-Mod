@@ -104,6 +104,11 @@ jobs:
                       "version": "^6.4.2",
                       "id": "beatsaber-hook",
                       "downloadIfMissing": "https://github.com/QuestPackageManager/beatsaber-hook/releases/download/v6.4.2/beatsaber-hook.qmod"
+                  },
+                  {
+                      "version": "^0.4.55",
+                      "id": "bsml",
+                      "downloadIfMissing": "https://github.com/bsq-ports/Quest-BSML/releases/download/v0.4.55/BSML.qmod"
                   }
               ],
               "modFiles": [],
