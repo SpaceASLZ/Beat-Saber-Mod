@@ -27,6 +27,11 @@
       "additionalData": {}
     },
     {
+          {
+      "id": "bs-cordl",
+      "versionRange": "4008.*",
+      "additionalData": {}
+    },
       "id": "scotland2",
       "versionRange": "^0.1.6",
       "additionalData": {
