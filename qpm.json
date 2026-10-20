@@ -20,7 +20,7 @@
     ],
     "qmodOutput": "./QuestLyrics.qmod"
   },
-  "dependencies": [  "dependencies": [
+  "dependencies": [
     {
       "id": "beatsaber-hook",
       "versionRange": "^6.4.2",
