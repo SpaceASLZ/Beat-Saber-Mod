@@ -2,18 +2,31 @@ name: QuestLyrics Build
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - "src/**"
+      - "tests/**"
+      - ".github/workflows/build.yml"
 
 jobs:
-  check-project:
+  test-parser:
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Verify source files
+      - name: Install C++ compiler
         run: |
-          test -f README.md
-          test -f src/lyrics/LrcParser.hpp
-          test -f src/lyrics/LrcParser.cpp
-          echo "QuestLyrics source files found."
+          sudo apt-get update
+          sudo apt-get install -y g++
+
+      - name: Compile parser and tests
+        run: |
+          g++ -std=c++17 -Wall -Wextra -Werror \
+            src/lyrics/LrcParser.cpp \
+            tests/lrc_parser_test.cpp \
+            -o parser_test
+
+      - name: Run parser tests
+        run: ./parser_test
