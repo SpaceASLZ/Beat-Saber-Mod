@@ -397,7 +397,7 @@ MAKE_HOOK_MATCH(
     }
 
     const long long songTimeMs =
-        static_cast<long long>(songTime * 1000.0f) - 5000;
+        static_cast<long long>(songTime * 1000.0f) - 7000;
 
     const auto next = std::upper_bound(
         timedLyrics.begin(),
