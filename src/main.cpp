@@ -200,11 +200,6 @@ static std::string FindBestSyncedLyrics(const std::string& response) {
             }
         }
 
-        if (item.HasMember("duration") &&
-            item["duration"].IsNumber()) {
-            const double difference = std::abs(
-                item["duration"].GetDouble() -
-                static_cast<double>(currentSongDuration)
             );
 
             if (difference <= 2.0) {
