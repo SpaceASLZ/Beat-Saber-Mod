@@ -200,8 +200,6 @@ static std::string FindBestSyncedLyrics(const std::string& response) {
             }
         }
 
-            );
-
             if (difference <= 2.0) {
                 score += 3;
             } else if (difference <= 6.0) {
