@@ -172,7 +172,7 @@ static std::string FindBestSyncedLyrics(const std::string& response) {
         const std::string candidateArtist =
             NormalizeForMatch(ReadJsonString(item, "artistName"));
 
-        int score = 1;
+                int score = 1;
 
         if (!wantedTitle.empty() && !candidateTitle.empty()) {
             if (candidateTitle == wantedTitle) {
@@ -197,13 +197,6 @@ static std::string FindBestSyncedLyrics(const std::string& response) {
                 score += 2;
             } else {
                 score -= 2;
-            }
-        }
-
-            if (difference <= 2.0) {
-                score += 3;
-            } else if (difference <= 6.0) {
-                score += 1;
             }
         }
 
