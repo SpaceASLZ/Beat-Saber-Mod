@@ -55,7 +55,7 @@ static void CreateLyricsPanel() {
 
     lyricsScreen = BSML::Lite::CreateFloatingScreen(
         UnityEngine::Vector2(65.0f, 26.0f),
-        UnityEngine::Vector3(-1.15f, 2.0f, 3.0f),
+        UnityEngine::Vector3(1.15f, 2.0f, 3.0f),
         UnityEngine::Vector3(0.0f, 0.0f, 0.0f),
         0.0f,
         true,
@@ -65,7 +65,7 @@ static void CreateLyricsPanel() {
     lyricsText = BSML::Lite::CreateText(
         lyricsScreen->get_transform(),
         "QuestLyrics\nWaiting for song...",
-        3.8f,
+        4.0f,
         UnityEngine::Vector2(0.0f, 0.0f),
         UnityEngine::Vector2(61.0f, 22.0f)
     );
